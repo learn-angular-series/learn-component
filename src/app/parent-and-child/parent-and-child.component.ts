@@ -16,7 +16,7 @@ export class ParentAndChildComponent implements OnInit {
   }
   
   ngAfterViewInit() {
-    this.childComponent.childFn();
+    // this.childComponent.childFn();
   }
 
   public doSomething():void{
