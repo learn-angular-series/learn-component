@@ -14,7 +14,7 @@ export class TestValueBindComponent implements OnInit {
   }
 
   public changeSrc():void{
-    if(new Date().getTime()%2){
+    if(Math.ceil(Math.random()*1000000000)%2){
       this.imgSrc="./assets/imgs/2.jpg";
     }else{
       this.imgSrc="./assets/imgs/1.jpg";
