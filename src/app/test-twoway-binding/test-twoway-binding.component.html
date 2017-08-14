@@ -1,0 +1,7 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">双向绑定</div>
+  <div class="panel-body">
+    <font-resizer [(size)]="fontSizePx"></font-resizer>
+    <div [style.font-size.px]="fontSizePx">Resizable Text</div>
+  </div>
+</div>
