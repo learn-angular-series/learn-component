@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="row">
     <div class="col-xs-12">
-      <h3>欢迎来到{{title}}！</h3>
+      <h2>欢迎来到{{title}}！</h2>
       <h3>1+1={{1+1}}</h3>
       <h3>可以调用方法{{getVal()}}</h3>
     </div>
@@ -16,6 +16,25 @@
     <div class="col-xs-12">
       <p *ngIf="isShow" style="background-color:#ff3300">显示还是不显示？</p>
       <button (click)="toggleShow()">控制显示隐藏</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>种族</h3>
+      <ul>
+        <li *ngFor="let race of races;let i=index;">
+          {{i+1}}-{{race.name}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div [ngSwitch]="mapStatus">
+        <p *ngSwitchCase="'下载中'">下载中...</p>
+        <p *ngSwitchCase="'正在读取'">正在读取...</p>
+        <p *ngSwitchDefault>系统繁忙...</p>
+      </div>
     </div>
   </div>
 </div>
