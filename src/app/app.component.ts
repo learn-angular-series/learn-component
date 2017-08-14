@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '星际争霸2';
-
-  public getVal():any{
-    return 65535;
-  }
+  
 }
