@@ -6,8 +6,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
+  public _panelTitle:string="我是子组件";
+  
   @Input()
-  public panelTitle:string="我是子组件";
+  set panelTitle(panelTitle:string){
+    this._panelTitle="【"+panelTitle+"】";
+  }
+
+  get panelTitle():string{
+    return this._panelTitle;
+  }
 
   @Output()
   public follow=new EventEmitter<string>();
