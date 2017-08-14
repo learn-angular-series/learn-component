@@ -1,6 +1,21 @@
 <div class="jumbotron">
-  <h3>欢迎来到{{title}}！</h3>
-  <h3>1+1={{1+1}}</h3>
-  <h3>可以调用方法{{getVal()}}</h3>
-  <input #heroInput> {{heroInput.value}}
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>欢迎来到{{title}}！</h3>
+      <h3>1+1={{1+1}}</h3>
+      <h3>可以调用方法{{getVal()}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <input #heroInput>
+      <button (click)="sayHello(heroInput.value)">局部变量</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p *ngIf="isShow" style="background-color:#ff3300">显示还是不显示？</p>
+      <button (click)="toggleShow()">控制显示隐藏</button>
+    </div>
+  </div>
 </div>
