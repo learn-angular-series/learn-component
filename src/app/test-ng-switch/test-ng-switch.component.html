@@ -1,0 +1,10 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">ngSwitch用法</div>
+  <div class="panel-body">
+    <div [ngSwitch]="mapStatus">
+      <p *ngSwitchCase="'下载中'">下载中...</p>
+      <p *ngSwitchCase="'正在读取'">正在读取...</p>
+      <p *ngSwitchDefault>系统繁忙...</p>
+    </div>
+  </div>
+</div>
