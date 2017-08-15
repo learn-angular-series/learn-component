@@ -8,6 +8,7 @@ import { flyIn } from '../animations/fly-in';
   animations:[flyIn]
 })
 export class TestFlyInComponent implements OnInit {
+  state:string;
 
   constructor() { }
 
