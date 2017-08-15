@@ -6,7 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-  public _panelTitle:string="我是子组件";
+  private _panelTitle:string="我是子组件";
   
   @Input()
   set panelTitle(panelTitle:string){
