@@ -19,6 +19,10 @@ export class Child1Component implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(JSON.stringify(changes,null,4));
+    //console.log(JSON.stringify(changes,null,4));
+  }
+
+  ngDoCheck():void{
+    console.log("Child1 ngDoCheck..."+new Date());
   }
 }

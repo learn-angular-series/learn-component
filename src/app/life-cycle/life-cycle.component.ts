@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy  } from '@angular/core';
 
 @Component({
   selector: 'life-cycle',
   templateUrl: './life-cycle.component.html',
-  styleUrls: ['./life-cycle.component.css']
+  styleUrls: ['./life-cycle.component.css'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class LifeCycleComponent implements OnInit {
   public logs: Array<string> = [];
