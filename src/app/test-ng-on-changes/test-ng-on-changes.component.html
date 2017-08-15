@@ -1,0 +1,20 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">父组件</div>
+  <div class="panel-body">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2 control-label">用户名1：</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="userName" name="userName1"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">用户名2：</label>
+        <div class="col-sm-10">
+          <input [(ngModel)]="userObj.userName" name="userName2"/>
+        </div>
+      </div>
+    </form>
+    <child1 [userName]="userName" [userObj]="userObj"></child1>
+  </div>
+</div>
