@@ -1,12 +1,11 @@
-import { Component, OnInit,ViewChild,ViewContainerRef,ComponentFactoryResolver,ChangeDetectionStrategy, ComponentRef } from '@angular/core';
+import { Component, OnInit,ViewChild,ViewContainerRef,ComponentFactoryResolver, ComponentRef } from '@angular/core';
 import { Child11Component } from './child11/child11.component';
 import { state } from '@angular/animations';
 
 @Component({
   selector: 'dynamic-comp',
   templateUrl: './dynamic-comp.component.html',
-  styleUrls: ['./dynamic-comp.component.scss'],
-  changeDetection:ChangeDetectionStrategy.OnPush
+  styleUrls: ['./dynamic-comp.component.scss']
 })
 export class DynamicCompComponent implements OnInit {
   @ViewChild("dyncomp",{read:ViewContainerRef})
