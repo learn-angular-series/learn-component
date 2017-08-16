@@ -11,7 +11,7 @@ import { state } from '@angular/animations';
 export class DynamicCompComponent implements OnInit {
   @ViewChild("dyncomp",{read:ViewContainerRef})
   dyncomp:ViewContainerRef;
-  
+
   comp1:ComponentRef<Child11Component>;
   comp2:ComponentRef<Child11Component>;
 
@@ -26,7 +26,7 @@ export class DynamicCompComponent implements OnInit {
     const childComp=this.resolver.resolveComponentFactory(Child11Component);
     /**
      * createComponent方法可以调用很多次，会动态创建出多个组件实例
-     * createComponent有第二个参数，表示组件渲染的顺序
+     * 方法有第二个参数，表示组件渲染的顺序
      */
     this.comp1=this.dyncomp.createComponent(childComp); 
     this.comp1.instance.title="设置一个新的标题";
