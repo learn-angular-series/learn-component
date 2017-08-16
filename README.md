@@ -7,3 +7,5 @@
 - communication分支，示范组件之间的通讯
 - lifecycle分支，示范组件的生命周期玩法
 - animation分支，示范动画的用法
+- dynamic-component分支，示范动态组件的各种玩法
+- shadowdom分支，示范影子DOM的玩法
