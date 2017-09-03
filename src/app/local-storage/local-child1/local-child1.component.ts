@@ -14,5 +14,6 @@ export class LocalChild1Component implements OnInit {
 
   public writeData():void{
     window.localStorage.setItem("json",JSON.stringify({name:'大漠穷秋',age:18}));
+    
   }
 }

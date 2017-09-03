@@ -14,6 +14,7 @@ export class LocalChild2Component implements OnInit {
 
   public readData():void{
     var json=window.localStorage.getItem("json");
+    // window.localStorage.removeItem("json");
     var obj=JSON.parse(json);
     console.log(obj.name);
     console.log(obj.age);

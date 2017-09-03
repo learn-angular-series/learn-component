@@ -1,7 +1,7 @@
 <div class="panel panel-primary">
     <div class="panel-heading">第一种：父子组件之间通讯</div>
     <div class="panel-body">
-        <child #child (follow)="doSomething()" panelTitle="设置子组件标题"></child>
+        <child #child (follow)="doSomething()" panelTitle="一个新的标题"></child>
         <button (click)="child.childFn()" class="btn btn-success">调用子组件方法</button>
     </div>
 </div>

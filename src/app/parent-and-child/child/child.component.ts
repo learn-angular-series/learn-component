@@ -25,11 +25,11 @@ export class ChildComponent implements OnInit {
   ngOnInit() {
   }
 
-  public emitAnEvent():void{
+  public emitAnEvent(event):void{
     this.follow.emit("follow");
   }
 
   public childFn():void{
-    alert("父组件调用子组件方法！");
+    console.log("子组件的名字是>"+this.panelTitle);
   }
 }
