@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class TestPipeComponent implements OnInit {
   public currentTime: Date = new Date();
   
-  constructor() { 
-    window.setInterval(
-			()=>{this.currentTime=new Date()}
-		,1000);
+  constructor() {
   }
 
   ngOnInit() {
+    window.setInterval(
+			()=>{this.currentTime=new Date()}
+		,1000);
   }
 }
