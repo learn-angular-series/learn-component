@@ -5,4 +5,9 @@
 
 - template分支，用12个例子全面示范Angular的模板语法
 - communication分支，示范组件之间的通讯
-- hooks分支，示范组件的生命周期玩法
+- lifecycle分支，示范组件的生命周期玩法
+- animation分支，示范动画的用法
+- dynamic-component分支，示范动态组件的各种玩法
+- shadowdom分支，示范影子DOM的玩法
+- contentchild分支，示范ContentChild玩法
+- viewchild分支，示范ViewChild玩法
