@@ -7,3 +7,10 @@
 - communication分支，示范组件之间的通讯
 - lifecycle分支，示范组件的生命周期玩法
 - animation分支，示范动画的用法
+- dynamic-component分支，示范动态组件的各种玩法
+- shadowdom分支，示范影子DOM的玩法
+- contentchild分支，示范ContentChild玩法
+- viewchild分支，示范ViewChild玩法
+
+此项目有对应的【收费版】视频教程，如果有需要请点击这里：
+https://damoqiongqiu.github.io/web%E5%89%8D%E7%AB%AF/2017/08/15/angular-course-phase2.html
