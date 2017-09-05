@@ -30,6 +30,13 @@ export class DynamicCompComponent implements OnInit {
     this.comp1.instance.btnClick.subscribe((param)=>{
       console.log(param);
     });
+
+    //可以创建多个组件实例出来
+    // this.dyncomp.createComponent(childComp); 
+    // this.dyncomp.createComponent(childComp); 
+    // this.dyncomp.createComponent(childComp); 
+    // this.dyncomp.createComponent(childComp); 
+    // this.dyncomp.createComponent(childComp); 
     
     /**
      * createComponent方法可以调用很多次，会动态创建出多个组件实例
