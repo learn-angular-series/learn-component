@@ -9,10 +9,12 @@ import { ChildTwoComponent } from '../child-two/child-two.component';
 export class ChildOneComponent implements OnInit {
   // @ContentChild(ChildTwoComponent)
   // childTwo:ChildTwoComponent;
-  @ContentChildren(ChildTwoComponent) childrenTwo:QueryList<ChildTwoComponent>;
+  @ContentChildren(ChildTwoComponent) 
+  childrenTwo:QueryList<ChildTwoComponent>;
   constructor() { }
 
   ngOnInit() {
+    
   }
 
   ngAfterContentInit():void{
