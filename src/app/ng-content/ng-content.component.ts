@@ -12,4 +12,7 @@ export class NgContentComponent implements OnInit {
   ngOnInit() {
   }
 
+  public doSomething():void{
+    alert("最外层sayhello!");
+  }
 }

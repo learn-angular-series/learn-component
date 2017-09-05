@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'test-child-three',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child-three.component.scss']
 })
 export class ChildThreeComponent implements OnInit {
+  @Output()
+  public sayhello:EventEmitter<any>=new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  public sayHello():void{
+    this.sayhello.emit("sayhello");
+  }
 }
