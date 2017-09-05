@@ -19,8 +19,11 @@ export class TestViewChildComponent implements OnInit {
 
   ngAfterViewInit():void{
     // console.log(this.childOne);
+    // this.childOne.helloEvent.subscribe((param)=>{
+    //   console.log(this.childOne.title);
+    // });
     this.children.forEach((item)=>{
-      console.log(item);
+      // console.log(item);
       //动态监听子组件的事件
       item.helloEvent.subscribe((data)=>{
         console.log(data);

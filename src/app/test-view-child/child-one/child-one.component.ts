@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'child-one',
@@ -6,6 +6,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./child-one.component.scss']
 })
 export class ChildOneComponent implements OnInit {
+  @Input()
+  public title:string="我是ChildOne";
+
   @Output()
   helloEvent:EventEmitter<string>=new EventEmitter<string>();
 
