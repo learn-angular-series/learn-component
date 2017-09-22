@@ -8,6 +8,7 @@ import { state } from '@angular/animations';
   styleUrls: ['./dynamic-comp.component.scss']
 })
 export class DynamicCompComponent implements OnInit {
+  //这里引用模板里面定义的dyncomp容器标签
   @ViewChild("dyncomp",{read:ViewContainerRef})
   dyncomp:ViewContainerRef;
 
