@@ -23,8 +23,9 @@ learn-***是一个系列教学项目用的实例源代码，全部链接请点�
 - https://gitee.com/mumu-osc/learn-test
 - https://gitee.com/mumu-osc/learn-webpack
 
-如果你想看到关于Angular的更多资源，请点这里
-https://damoqiongqiu.github.io
+如果你需要一个更复杂、更完整一点的例子，请试试NiceFish：https://gitee.com/mumu-osc/NiceFish
+
+如果你想看到关于Angular的更多资源，请点这里：https://damoqiongqiu.github.io
 
 ## 在线交流QQ群
 
