@@ -13,5 +13,6 @@
 - contentchild分支，示范ContentChild和ContentChildren的玩法
 - viewchild分支，示范ViewChild和ViewChildren的玩法
 
-如果你想看到关于Angular的更多资源，请点这里
-https://damoqiongqiu.github.io
+如果你需要一个更复杂、更完整一点的例子，请试试NiceFish：https://gitee.com/mumu-osc/NiceFish
+
+如果你想看到关于Angular的更多资源，请点这里：https://damoqiongqiu.github.io
