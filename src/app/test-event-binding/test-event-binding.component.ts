@@ -12,7 +12,8 @@ export class TestEventBindingComponent implements OnInit {
   ngOnInit() {
   }
 
-  public btnClick(event):void{
+  public btnClick(event): void {
+    console.log(event);
     alert("测试事件绑定！");
   }
 }

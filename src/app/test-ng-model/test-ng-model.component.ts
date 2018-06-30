@@ -6,11 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-ng-model.component.css']
 })
 export class TestNgModelComponent implements OnInit {
-  public currentRace:any={name:"随机种族"};
+  public currentRace: any = { name: "随机种族" };
 
   constructor() { }
 
   ngOnInit() {
+    // setInterval(() => {
+    //   this.currentRace.name = Math.random() * 1000 + "";
+    // }, 1000);
   }
 
 }

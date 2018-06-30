@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-interpolation.component.css']
 })
 export class TestInterpolationComponent implements OnInit {
-  public title = '假的星际争霸2';  
+  public title = '假的星际争霸2';
   constructor() { }
 
   ngOnInit() {
   }
 
-  public getVal():any{
+  public getVal(): any {
     return 65535;
   }
 }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-safe-nav.component.css']
 })
 export class TestSafeNavComponent implements OnInit {
-  public currentRace:any=null;//{name:'神族'};
+  public currentRace: any = null;//{name:'神族'};
 
   constructor() { }
 
