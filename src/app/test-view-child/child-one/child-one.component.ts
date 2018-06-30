@@ -1,4 +1,5 @@
-import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { uuid } from "uuid";
 
 @Component({
   selector: 'child-one',
@@ -6,18 +7,22 @@ import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
   styleUrls: ['./child-one.component.scss']
 })
 export class ChildOneComponent implements OnInit {
+  public id: string;
+
   @Input()
-  public title:string="我是ChildOne";
+  public title: string = "我是ChildOne";
 
   @Output()
-  helloEvent:EventEmitter<string>=new EventEmitter<string>();
+  helloEvent: EventEmitter<string> = new EventEmitter<string>();
 
-  constructor() { }
+  constructor() {
+    this.id = uuid();
+  }
 
   ngOnInit() {
   }
-  
-  public sayHello():void{
-    this.helloEvent.emit("hello...");
+
+  public sayHello(): void {
+    this.helloEvent.emit(this.id);
   }
 }

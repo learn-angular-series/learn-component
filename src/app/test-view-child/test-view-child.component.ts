@@ -10,22 +10,22 @@ export class TestViewChildComponent implements OnInit {
   // @ViewChild(ChildOneComponent)
   // childOne:ChildOneComponent;
   @ViewChildren(ChildOneComponent)
-  children:QueryList<ChildOneComponent>;
+  children: QueryList<ChildOneComponent>;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  ngAfterViewInit():void{
+  ngAfterViewInit(): void {
     // console.log(this.childOne);
     // this.childOne.helloEvent.subscribe((param)=>{
     //   console.log(this.childOne.title);
     // });
-    this.children.forEach((item)=>{
+    this.children.forEach((item) => {
       // console.log(item);
       //动态监听子组件的事件
-      item.helloEvent.subscribe((data)=>{
+      item.helloEvent.subscribe((data) => {
         console.log(data);
       });
     });
