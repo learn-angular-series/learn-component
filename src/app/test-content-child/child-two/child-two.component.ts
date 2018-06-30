@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'child-two',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child-two.component.scss']
 })
 export class ChildTwoComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
   }
 
+  public sayHello(): void {
+    console.log("Hello 大漠穷秋!");
+  }
 }

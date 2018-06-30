@@ -9,17 +9,18 @@ import { ChildTwoComponent } from '../child-two/child-two.component';
 export class ChildOneComponent implements OnInit {
   // @ContentChild(ChildTwoComponent)
   // childTwo:ChildTwoComponent;
-  @ContentChildren(ChildTwoComponent) 
-  childrenTwo:QueryList<ChildTwoComponent>;
+  @ContentChildren(ChildTwoComponent)
+  childrenTwo: QueryList<ChildTwoComponent>;
+
   constructor() { }
 
   ngOnInit() {
-    
+
   }
 
-  ngAfterContentInit():void{
+  ngAfterContentInit(): void {
     // console.log(this.childTwo);
-    this.childrenTwo.forEach((item)=>{
+    this.childrenTwo.forEach((item) => {
       console.log(item);
     });
   }
