@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { uuid } from "uuid";
 
 @Component({
   selector: 'child-one',
@@ -16,7 +15,7 @@ export class ChildOneComponent implements OnInit {
   helloEvent: EventEmitter<string> = new EventEmitter<string>();
 
   constructor() {
-    this.id = uuid();
+    this.id = "ID-" + Math.floor(Math.random() * 100000000);
   }
 
   ngOnInit() {
