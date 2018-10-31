@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParenetAndChildComponent } from './parenet-and-child.component';
+import { ParentAndChildComponent } from './parent-and-child.component';
 
-describe('ParenetAndChildComponent', () => {
-  let component: ParenetAndChildComponent;
-  let fixture: ComponentFixture<ParenetAndChildComponent>;
+describe('ParentAndChildComponent', () => {
+  let component: ParentAndChildComponent;
+  let fixture: ComponentFixture<ParentAndChildComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ParenetAndChildComponent ]
+      declarations: [ParentAndChildComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParenetAndChildComponent);
+    fixture = TestBed.createComponent(ParentAndChildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
