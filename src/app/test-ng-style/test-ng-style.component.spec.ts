@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TestNgStyleComponentComponent } from './test-ng-style-component.component';
+import { TestNgStyleComponent } from './test-ng-style.component';
 
-describe('TestNgStyleComponentComponent', () => {
-  let component: TestNgStyleComponentComponent;
-  let fixture: ComponentFixture<TestNgStyleComponentComponent>;
+describe('TestNgStyleComponent', () => {
+  let component: TestNgStyleComponent;
+  let fixture: ComponentFixture<TestNgStyleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TestNgStyleComponentComponent ]
+      declarations: [TestNgStyleComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TestNgStyleComponentComponent);
+    fixture = TestBed.createComponent(TestNgStyleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
