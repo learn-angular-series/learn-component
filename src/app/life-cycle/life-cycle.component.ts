@@ -1,16 +1,16 @@
-import { Component, OnInit, Input, ChangeDetectionStrategy  } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'life-cycle',
   templateUrl: './life-cycle.component.html',
   styleUrls: ['./life-cycle.component.css'],
-  changeDetection:ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LifeCycleComponent implements OnInit {
   public logs: Array<string> = [];
 
   @Input()
-  public title:string="";
+  public title: string = "父层的传递进来的标题";
 
   constructor() {
     /**
@@ -22,6 +22,7 @@ export class LifeCycleComponent implements OnInit {
   }
 
   ngOnChanges() {
+    console.log("ngOnChanges...");
     this.logs.push("ngOnChanges...");
   }
 
