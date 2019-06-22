@@ -22,35 +22,34 @@ export class LifeCycleComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log("ngOnChanges...");
-    this.logs.push("ngOnChanges...");
+    this.logs.push("1-ngOnChanges...");
   }
 
   ngOnInit() {
-    this.logs.push("ngOnInit...");
+    this.logs.push("2-ngOnInit...");
   }
 
   ngDoCheck() {
-    this.logs.push("ngDoCheck...");
+    this.logs.push("3-ngDoCheck...");
   }
 
   ngAfterContentInit() {
-    this.logs.push("ngAfterContentInit...");
+    this.logs.push("4-ngAfterContentInit...");
   }
 
   ngAfterContentChecked() {
-    this.logs.push("ngAfterContentChecked...");
+    this.logs.push("5-ngAfterContentChecked...");
   }
 
   ngAfterViewInit() {
-    this.logs.push("ngAfterViewInit...");
+    this.logs.push("6-ngAfterViewInit...");
   }
 
   ngAfterViewChecked() {
-    this.logs.push("ngAfterViewChecked...");
+    this.logs.push("7-ngAfterViewChecked...");
   }
 
   ngOnDestory() {
-    this.logs.push("ngOnDestory...");
+    this.logs.push("8-ngOnDestory...");
   }
 }
