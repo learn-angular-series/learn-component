@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public myTitle: string = "默认标题";
-
+  
   constructor() {
     setInterval(() => {
       this.myTitle = "新标题" + new Date().toLocaleString();
