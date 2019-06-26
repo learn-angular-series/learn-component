@@ -24,9 +24,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/echarts/dist/echarts.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "mock": {
@@ -102,9 +100,7 @@
             "main": "src/test.ts",
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
-            "scripts": [
-              "node_modules/echarts/dist/echarts.js"
-            ],
+            "scripts": [],
             "styles": [
               "src/styles.scss"
             ],
