@@ -7,7 +7,7 @@ import { ChildComponent } from './child/child.component';
   styleUrls: ['./parent-and-child.component.css']
 })
 export class ParentAndChildComponent implements OnInit {
-  @ViewChild(ChildComponent, { static: true })
+  @ViewChild(ChildComponent, { read: true })
   private childComponent: ChildComponent;
 
   constructor() { }
