@@ -9,7 +9,7 @@ import { state } from '@angular/animations';
 })
 export class DynamicCompComponent implements OnInit {
   //这里引用模板里面定义的dyncomp容器标签
-  @ViewChild("dyncomp", { read: ViewContainerRef })
+  @ViewChild("dyncomp", { read: ViewContainerRef, static: true })
   dyncomp: ViewContainerRef;
 
   comp1: ComponentRef<Child11Component>;
