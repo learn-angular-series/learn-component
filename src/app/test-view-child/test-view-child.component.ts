@@ -7,10 +7,10 @@ import { ChildOneComponent } from './child-one/child-one.component';
   styleUrls: ['./test-view-child.component.scss']
 })
 export class TestViewChildComponent implements OnInit {
-  // @ViewChild(ChildOneComponent)
-  // childOne:ChildOneComponent;
-  @ViewChildren(ChildOneComponent)
-  children: QueryList<ChildOneComponent>;
+  @ViewChild(ChildOneComponent,{static:false})
+  childOne:ChildOneComponent;
+  // @ViewChildren(ChildOneComponent)
+  // children: QueryList<ChildOneComponent>;
 
   constructor() { }
 
@@ -18,16 +18,16 @@ export class TestViewChildComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
-    // console.log(this.childOne);
-    // this.childOne.helloEvent.subscribe((param)=>{
-    //   console.log(this.childOne.title);
-    // });
-    this.children.forEach((item) => {
-      // console.log(item);
-      //动态监听子组件的事件
-      item.helloEvent.subscribe((data) => {
-        console.log(data);
-      });
+    console.log(this.childOne);
+    this.childOne.helloEvent.subscribe((param)=>{
+      console.log(this.childOne.title);
     });
+    // this.children.forEach((item) => {
+    //   // console.log(item);
+    //   //动态监听子组件的事件
+    //   item.helloEvent.subscribe((data) => {
+    //     console.log(data);
+    //   });
+    // });
   }
 }
