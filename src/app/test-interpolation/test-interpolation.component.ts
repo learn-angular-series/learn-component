@@ -13,6 +13,6 @@ export class TestInterpolationComponent implements OnInit {
   }
 
   public getVal(): any {
-    return 65535;
+    return 10086;
   }
 }
