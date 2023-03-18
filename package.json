@@ -30,7 +30,7 @@
     "acorn-dynamic-import": "^4.0.0",
     "bootstrap": "3.3.7",
     "core-js": "2.5.4",
-    "echarts": "4.1.0",
+    "echarts": "5.4.1",
     "font-awesome": "4.7.0",
     "md5": "2.2.1",
     "ngx-echarts": "4.1.0",
