@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from '../login.service';
 
 @Component({
   standalone: true,
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./standalone-component.component.scss']
 })
 export class StandaloneComponentComponent {
+  constructor(private loginService: LoginService) { 
 
+  }
+
+  public doLogin(){
+    this.loginService.login();
+  }
 }
