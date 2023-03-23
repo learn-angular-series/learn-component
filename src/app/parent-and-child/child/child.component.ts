@@ -20,7 +20,7 @@ export class ChildComponent implements OnInit {
   @Output()
   public follow=new EventEmitter<string>();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

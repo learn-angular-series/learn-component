@@ -20,6 +20,6 @@ export class ParentAndChildComponent implements OnInit {
   }
 
   public doSomething():void{
-    alert("收到了子组件的自定义事件！");
+    alert("父层组件回调，收到了子组件的自定义事件！");
   }
 }

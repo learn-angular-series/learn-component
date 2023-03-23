@@ -13,7 +13,7 @@ export class LocalChild2Component implements OnInit {
   }
 
   public readData():void{
-    var json=window.localStorage.getItem("json");
+    var json=window.localStorage.getItem("userInfo");
     // window.localStorage.removeItem("json");
     var obj=JSON.parse(json);
     console.log(obj.name);

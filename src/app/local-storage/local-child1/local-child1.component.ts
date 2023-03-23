@@ -13,7 +13,10 @@ export class LocalChild1Component implements OnInit {
   }
 
   public writeData():void{
-    window.localStorage.setItem("json",JSON.stringify({name:'大漠穷秋',age:18}));
-    
+    window.localStorage.setItem("userInfo",JSON.stringify({
+      name:'大漠穷秋',
+      age:18,
+      area:"江苏省南京市"
+    }));
   }
 }
