@@ -13,6 +13,7 @@ export class TestInterpolationComponent implements OnInit {
   }
 
   public getVal(): any {
+    //其它的业务逻辑
     return 10086;
   }
 }

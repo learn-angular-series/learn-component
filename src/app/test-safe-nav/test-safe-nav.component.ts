@@ -12,5 +12,4 @@ export class TestSafeNavComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

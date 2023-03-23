@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-ng-for.component.css']
 })
 export class TestNgForComponent implements OnInit {
+  //只要是类数组的结构都可以（ES6 iterator）
   public races:Array<any>=[
     {name:"人族"},
     {name:"虫族"},
@@ -16,5 +17,5 @@ export class TestNgForComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
 }
